@@ -5,7 +5,7 @@ var xhr = new XMLHttpRequest();
 
 // create/opens a path/connection to external data with ajax which in this case is a .json
 // file hosted on my github account
-xhr.open('GET', 'https://raw.githubusercontent.com/NH3R717/umholtz_tommy_WD3/master/umholtz_tommy_newsBasic/tourSpot.json?token=AEB3OYAAYCMFCUKAYRNWF4K5TFY46', true);
+xhr.open('GET', 'https://raw.githubusercontent.com/NH3R717/umholtz_tommy_WD3/master/umholtz_tommy_newsBasic/tourSpot.json?token=AEB3OYBIJH6YFR665MN3RGK5TFZZG', true);
 
 // function – xhr loading above request after the page itself loads
 xhr.onload = function () {

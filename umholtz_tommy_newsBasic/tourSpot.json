@@ -4,7 +4,7 @@
 { 
 "id" : 1, 
 "title" : "Hong Kong Island", 
-"imageLink" : "https://github.com/NH3R717/umholtz_tommy_WD3/blob/master/umholtz_tommy_newsBasic/images/Hong_Kong.jpg?raw=true",
+"imageLink" : "https://raw.githubusercontent.com/NH3R717/Umholtz_Tommy_Portfolio/master/umholtz_Tommy_publicImages/Hong_Kong.jpg",
 "description" : "Victoria Harbour island tour elaboraret omittantur sit. Delenit expetendis mei ad, docendi definiebas ne vim. Usu aperiam atomorum eu, eu tota etiam mel, error soleat pro ut. Ius eu inimicus incorrupte, qui.", 
 "lineBreak" : "",
 "city" : "Hong Kong", 
@@ -16,13 +16,13 @@
 {
 "id" : 2,
 "title" : "Macau Grand Lisboa",
-"imageLink" : "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_WD3/master/umholtz_tommy_newsBasic/images/Macau.jpg?token=AEB3OYAAZOCKG25GB26D3HC5TFYRE",
+"imageLink" : "https://raw.githubusercontent.com/NH3R717/Umholtz_Tommy_Portfolio/master/umholtz_Tommy_publicImages/Macau.jpg",
 "description" : "Casionos and night life accumsan ut per, soluta doctus mel ne. Nobis aperiam recteque mea te, vim periculis expetendis, mel et officiis imperdiet comprehensam. Denique instructior, graece explicari salutatus.",
 "lineBreak" : "",
 "city" : "Macau",
 "airportCode" : "MFM",
 "localCurrency" : "MOP",
-"externalLink" : "https://www.macaotourism.gov.mo/en/"
+"externalLink" : "https://raw.githubusercontent.com/NH3R717/Umholtz_Tommy_Portfolio/master/umholtz_Tommy_publicImages/Taiwan.jpg"
 },
 
 {

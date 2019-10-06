@@ -4,7 +4,7 @@
 { 
 "id" : 1, 
 "title" : "Hong Kong Island", 
-"imageLink" : "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_WD3/master/umholtz_tommy_newsBasic/images/Hong_Kong.jpg?token=AEB3OYGPLBZGVFRRCFMQVDS5TFYQI",
+"imageLink" : "https://github.com/NH3R717/umholtz_tommy_WD3/blob/master/umholtz_tommy_newsBasic/images/Hong_Kong.jpg?raw=true",
 "description" : "Victoria Harbour island tour elaboraret omittantur sit. Delenit expetendis mei ad, docendi definiebas ne vim. Usu aperiam atomorum eu, eu tota etiam mel, error soleat pro ut. Ius eu inimicus incorrupte, qui.", 
 "lineBreak" : "",
 "city" : "Hong Kong", 
@@ -28,7 +28,7 @@
 {
 "id" : 3,
 "title" : "Taipei City Scooter",
-"imageLink" : "https://github.com/NH3R717/umholtz_tommy_WD3/blob/master/umholtz_tommy_newsBasic/images/Taiwan.jpg",
+"imageLink" : "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_WD3/master/umholtz_tommy_newsBasic/images/Taiwan.jpg?token=AEB3OYEK7USMDHMRFNLCBHC5TFZAU",
 "description" : "Getting around by scooter mediocritatem eu. Pro in quas soleat referrentur, ad eam graece definitiones, essent probatus pri in. Meis option principes mea pro tota cu. Sea cu vidisse antiopam, per id vidisse.",
 "lineBreak" : "",
 "city" : "Taipei",

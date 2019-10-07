@@ -23,17 +23,14 @@ xhr.onload = function () {
 		
 		var tourSpots = "";
 		
-		//determine why there are 6 articles in my assignment, console output shows – 3
-	
-		
-		
 		for (var i = 0; i < data.tourSpots.length; i++) {
 			
+			//determine why there are 6 articles in my assignment, console output shows – 3
 			console.log(i);
 		
 			tourSpots += '<article>';
 
-			// loads image
+			//loads image from my github repo
 			tourSpots += '<p class="thumbnail"><img src="' + data.tourSpots[i].imageLink + '" alt="' + data.tourSpots[i].tourSpots + '"></p>';
 			
 			//title
@@ -53,20 +50,20 @@ xhr.onload = function () {
 			//close article tag
 			
 			tourSpots += '</article>';
-			
-			EAtourSpots.querySelector('h2').insertAdjacentHTML('afterend', tourSpots);
 
 		}
-		
+
+		EAtourSpots.querySelector('h2').insertAdjacentHTML('afterend', tourSpots);
+
 	}
-	
+
 }
 
 // closes ajax path
 xhr.send(null);
 
 // selects <section id="blog"> in news.html to alter "<h2>Latest <strong>News</strong></h2>" text
-document.querySelector("#blog h2").innerHTML = "<strong>East Asia</strong> Tour Spots";
+document.querySelector("#blog h2").innerHTML = "<strong><h1>East Asia</strong></h1> Tour Spots";
 //document.querySelector("#blog h2").innerHTML = "<p><font color="green"><strong>East Asia</strong> Tour Spots</font></p>";
 
 // selects <section id="blog"> in news.html to alter < p > <button>Load More</button></p > text and add click event opening linked url in a new window / tab

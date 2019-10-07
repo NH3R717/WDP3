@@ -5,7 +5,7 @@ var xhr = new XMLHttpRequest();
 
 // create/opens a path/connection to external data with ajax which in this case is a .json
 // file hosted on my github account
-xhr.open('GET', 'https://raw.githubusercontent.com/NH3R717/umholtz_tommy_WD3/master/umholtz_tommy_newsBasic/tourSpot.json?token=AEB3OYBIJH6YFR665MN3RGK5TFZZG', true);
+xhr.open('GET', 'https://raw.githubusercontent.com/NH3R717/umholtz_tommy_WD3/master/umholtz_tommy_newsBasic/tourSpot.json', true);
 
 // function – xhr loading above request after the page itself loads
 xhr.onload = function () {
@@ -23,14 +23,16 @@ xhr.onload = function () {
 		
 		var tourSpots = "";
 		
-		//determine why there are 6 articles in my assignment
-		console.log(tourSpots);
+		//determine why there are 6 articles in my assignment, console output shows – 3
+	
 		
 		
 		for (var i = 0; i < data.tourSpots.length; i++) {
 			
+			console.log(i);
+		
 			tourSpots += '<article>';
-			
+
 			// loads image
 			tourSpots += '<p class="thumbnail"><img src="' + data.tourSpots[i].imageLink + '" alt="' + data.tourSpots[i].tourSpots + '"></p>';
 			

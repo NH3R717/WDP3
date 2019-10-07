@@ -9,30 +9,27 @@ xhr.open('GET', 'https://raw.githubusercontent.com/NH3R717/umholtz_tommy_WD3/mas
 
 // function – xhr loading above request after the page itself loads
 xhr.onload = function () {
-		
+
 	// variable that parses JSON data and saves locally
 	var data = JSON.parse(xhr.responseText);
 
 	// ** inserts HTML data into section
-	
+
 	// variable that looks to data section id tag in html document (with querySelector method) where ajax called data will be inserted
 	var EAtourSpots = document.querySelector('#blog');
-	
+
 	// limits 
 	if (EAtourSpots) {
-		
+
 		var tourSpots = "";
-		
+
 		for (var i = 0; i < data.tourSpots.length; i++) {
-			
-			//determine why there are 6 articles in my assignment, console output shows – 3
-			console.log(i);
-		
+
 			tourSpots += '<article>';
 
 			//loads image from my github repo
 			tourSpots += '<p class="thumbnail"><img src="' + data.tourSpots[i].imageLink + '" alt="' + data.tourSpots[i].tourSpots + '"></p>';
-			
+
 			//title
 			tourSpots += '<h2>' + data.tourSpots[i].title + '</h2>';
 			//activity description
@@ -48,7 +45,7 @@ xhr.onload = function () {
 			//external link
 			tourSpots += '<a href=' + data.tourSpots[i].externalLink + '>' + "More Info" + '</a>';
 			//close article tag
-			
+
 			tourSpots += '</article>';
 
 		}

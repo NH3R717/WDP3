@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "imageLink": "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/imageLinks/nikko_mt.jpg",
+        "imageLink": "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/images/nikko_mt.jpg",
         "description": "Nikko Mountain",
         "place": "Tochigi, Japan"
     },
     {
         "id": 2,
-        "imageLink": "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/imageLinks/peng_chau_hk.jpg",
+        "imageLink": "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/images/peng_chau_hk.jpg",
         "description": "Peng Chau Island",
         "place": "Hong Kong"
     },

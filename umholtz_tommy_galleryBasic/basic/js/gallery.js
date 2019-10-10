@@ -24,11 +24,13 @@ xhr.onload = function () {
     let countImg = 0
     infoImg(0)
 
+    console.log(showImages);
+
     // replaces image in gallery.html/fucntion loaded with click events
     function infoImg(index) {
         index
-        locationText.innerHTML = data[index].description
-        showImages.src = data[index].image
+        locationText.innerHTML = data[index].place
+        showImages.src = data[index].imageLink
         locationDescription.innerHTML = data[index].description
         showImages.description = data[index].description
     }

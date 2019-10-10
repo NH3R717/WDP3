@@ -28,5 +28,5 @@
         "imageLink": "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/images/macau_race.jpg",
         "description": "Guia Race of Macau",
         "place": "Macau"
-    },
+    }
 ]

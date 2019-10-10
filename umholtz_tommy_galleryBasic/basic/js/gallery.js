@@ -7,7 +7,7 @@ let xhr = new XMLHttpRequest();
 
 // create/opens a path/connection to external data with ajax which in this case is a .js
 // file hosted on my github account
-xhr.open('GET', 'https://raw.githubusercontent.com/fook-yu/test_hold/59fdef78cb5b07220c26d2d521e0fc6c7cc6ecea/ImageCaptionData.js', true);
+xhr.open('GET', 'https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/ImageCaptionData.js', true);
 
 console.log(xhr)
 

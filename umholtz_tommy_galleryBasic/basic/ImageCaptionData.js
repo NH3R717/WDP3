@@ -1,38 +1,32 @@
 [
     {
         "id": 1,
-        "image": "",
-        "description": "",
-        "place": ""
+        "imageLink": "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/imageLinks/nikko_mt.jpg",
+        "description": "Nikko Mountain",
+        "place": "Tochigi, Japan"
     },
     {
         "id": 2,
-        "image": "",
-        "description": "",
-        "place": ""
+        "imageLink": "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/imageLinks/peng_chau_hk.jpg",
+        "description": "Peng Chau Island",
+        "place": "Hong Kong"
     },
     {
         "id": 3,
-        "image": "",
-        "description": "",
-        "place": ""
+        "imageLink": "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/images/macau_gl.jpg",
+        "description": "Grand Lisboa Casino",
+        "place": "Macau"
     },
     {
         "id": 4,
-        "image": "",
-        "description": "",
-        "place": ""
+        "imageLink": "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/images/centeral_hk.jpeg",
+        "description": "Central District",
+        "place": "Hong Kong"
     },
     {
         "id": 5,
-        "image": "",
-        "description": "",
-        "place": ""
+        "imageLink": "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/images/macau_race.jpg",
+        "description": "Guia Race of Macau",
+        "place": "Macau"
     },
-    {
-        "id": 6,
-        "image": "",
-        "description": "",
-        "place": ""
-    }
 ]

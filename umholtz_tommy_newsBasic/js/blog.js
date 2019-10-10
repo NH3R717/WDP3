@@ -7,11 +7,15 @@ var xhr = new XMLHttpRequest();
 // file hosted on my github account
 xhr.open('GET', 'https://raw.githubusercontent.com/NH3R717/umholtz_tommy_WD3/master/umholtz_tommy_newsBasic/tourSpot.json', true);
 
+console.log(xhr)
+
 // function – xhr loading above request after the page itself loads
 xhr.onload = function () {
 
 	// variable that parses JSON data and saves locally
 	var data = JSON.parse(xhr.responseText);
+
+	console.log(xhr)
 
 	// ** inserts HTML data into section
 

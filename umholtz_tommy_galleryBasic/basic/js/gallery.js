@@ -1,0 +1,58 @@
+document.querySelector('h2').innerHTML = "East Asia <strong>Day Trips</strong>"
+
+// ** ajax loads JS file
+
+// variable for http request
+let xhr = new XMLHttpRequest();
+
+// create/opens a path/connection to external data with ajax which in this case is a .js
+// file hosted on my github account
+xhr.open('GET', 'https://raw.githubusercontent.com/fook-yu/test_hold/59fdef78cb5b07220c26d2d521e0fc6c7cc6ecea/ImageCaptionData.js', true);
+
+console.log(xhr)
+
+// function – xhr loading above request after the page itself loads
+xhr.onload = function () {
+
+    // declaration of variables within xhr.onload()
+    let data = JSON.parse(xhr.responseText);
+    let bttnNext = document.querySelectorAll('button')[1]
+    let bttnLast = document.querySelectorAll('button')[0]
+    let showImages = document.querySelector('img')
+    let locationText = document.querySelector('h3')
+    let locationDescription = document.querySelectorAll('article p')[1]
+    let countImg = 0
+    infoImg(0)
+
+    // replaces image in gallery.html/fucntion loaded with click events
+    function infoImg(index) {
+        index
+        locationText.innerHTML = data[index].description
+        showImages.src = data[index].image
+        locationDescription.innerHTML = data[index].description
+        showImages.description = data[index].description
+    }
+
+    bttnNext.addEventListener("click", function (event) {
+        countImg += 1
+        if (countImg >= data.length) {
+            countImg = 0
+            infoImg(countImg)
+        }
+        else {
+            infoImg(countImg)
+        }
+    });
+
+    bttnLast.addEventListener("click", function (event) {
+        countImg -= 1
+        if (countImg < 0) {
+            countImg = data.length - 1
+            infoImg(countImg)
+        }
+        else {
+            infoImg(countImg % data.length)
+        }
+    });
+}
+xhr.send(null);

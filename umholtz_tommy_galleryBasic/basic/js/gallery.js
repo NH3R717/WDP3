@@ -6,13 +6,13 @@ document.querySelector('h2').innerHTML = "East Asia <strong>Day Trips</strong>"
 let xhr = new XMLHttpRequest();
 
 // create/opens a path/connection to external data with ajax which in this case is a .js file
-// file hosted on my github account
+// file hosted on github account – NH3R717
 xhr.open('GET', 'https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/ImageCaptionData.js', true);
 
 // function – xhr loading above request after the page itself loads
 xhr.onload = function () {
 
-    // declaration of variables within xhr.onload()
+    // declaration of variables within xhr.onload function
     let data = JSON.parse(xhr.responseText);
     let bttnNext = document.querySelectorAll('button')[1]
     let bttnLast = document.querySelectorAll('button')[0]
@@ -36,26 +36,31 @@ xhr.onload = function () {
         countImg += 1
         // if countImg is greater than or equal to the number of elements in the data array countImg is equal to zero
         if (countImg >= data.length) {
-            // then countImg is equal to 0
             countImg = 0
-            // and call infoImg function 
+            // and call infoImg function passing countImg variable
             infoImg(countImg)
         }
         else {
+            // call infoImg function passing countImg variable
             infoImg(countImg)
         }
     });
 
+    // element.addEventListener(event, function, useCapture) 
     bttnLast.addEventListener("click", function (event) {
+        // countImg is equal to it's self plus 1
         countImg -= 1
+        // if countImg is less than number of elements in the data array countImg is equal to negative one
         if (countImg < 0) {
             countImg = data.length - 1
+            // and call infoImg function passing countImg variable
             infoImg(countImg)
         }
         else {
+            // call infoImg function passing countImg variable
             infoImg(countImg % data.length)
         }
     });
 }
-
+//close AJAX XMLHttpRequest connection
 xhr.send(null);

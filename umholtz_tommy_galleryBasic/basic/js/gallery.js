@@ -9,8 +9,6 @@ let xhr = new XMLHttpRequest();
 // file hosted on my github account
 xhr.open('GET', 'https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_galleryBasic/basic/ImageCaptionData.js', true);
 
-console.log(xhr)
-
 // function – xhr loading above request after the page itself loads
 xhr.onload = function () {
 
@@ -24,9 +22,7 @@ xhr.onload = function () {
     let countImg = 0
     infoImg(0)
 
-    console.log(showImages);
-
-    // replaces image in gallery.html/fucntion loaded with click events
+    // replaces image in gallery.html/function loaded with click events
     function infoImg(index) {
         index
         locationText.innerHTML = data[index].place
@@ -57,4 +53,5 @@ xhr.onload = function () {
         }
     });
 }
+
 xhr.send(null);

@@ -5,7 +5,7 @@ let form = document.querySelector('form');
 document.querySelector('h2').innerHTML = "<center>East Asia Travelers Club – Taiwan</center>";
 document.querySelector('h2').style.color = "white";
 
-// background field change
+//background field change
 document.body.style.backgroundImage = "url('images/Taipei.jpg')";
 
 // description field change
@@ -17,27 +17,40 @@ document.querySelector('#email').placeholder = "Email";
 document.querySelector('#phone').placeholder = "Line ID";
 document.querySelector('#message').placeholder = "Comment";
 
+// disable submit button
+var bttn = document.querySelector('[type=submit]');
+bttn.disabled === true;
+document.querySelector('[type=submit]').className = "disabled";
+console.log(bttn.disabled);
+
 // validate name + all other fields are not null
 let requiredFields = form.querySelectorAll('.required');
-for (let i = 0; i < requiredFields.length; i++) {
-
+for (let i = 0; i < requiredFields.length; i++){
+    if (!requiredFields[i].value){
+        bttn.disabled == false; 
+    } else {
+        bttn.disabled == true;
+    }
     requiredFields[i].addEventListener('blur', validateRequired);
-
 };
-function validateRequired(event) {
+
+function validateRequired() {
+
     let target = document.getElementById('name');
     let parent = target.parentElement;
-    let error = '<label class="error">Please include your name.</label>';
     let bttn = document.querySelector('[type=submit]');
-
+    let error = '<label class="error">Please include your name.</label>';
+    bttn.disabled = true;
+    
     if (!target.value.length) {
         if (parent.querySelector('.required')) {
             parent.insertAdjacentHTML('beforeend', error);
             bttn.disabled = true;
             document.querySelector('[type=submit]').className = "disabled";
-
+            
         } else {
             parent.removeChild(parent.querySelector('.error'));
+            bttn.disabled = false;
         }
     }
 };
@@ -47,12 +60,12 @@ let valEmail = form.querySelector('#email');
 {
 valEmail.addEventListener('blur', validateEmail);
 };
-function validateEmail(event) {
+function validateEmail() {
     let email = document.querySelector('#email');
     let parent = email.parentElement;
-
     let emailError = '<label class="error">Please enter a valid email address</label>';
     let emailFormat = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
     if (email.value.match(emailFormat)) {
         return (true);
 
@@ -71,6 +84,7 @@ function validatePhone() {
     let parent = line.parentElement;
     let lineError = '<label class="error">Please enter a valid Line ID</label>';
     let lineFormat = /[a-zA-Z]/;
+
     if (line.value.match(lineFormat)) {
         return (true);
 
@@ -90,6 +104,7 @@ function send(event) {
     let message = '<h2 style="color: #EB5B15"> THANK YOU!</h2> <p style="color: #607d8b"><center> Check your Line for our group invite, you should hear from us shortly. </center></p>';
     let target = event.target;
     let disabled = target.classList.contains('disabled');
+
     if (disabled === false) {
         form.innerHTML = message;
     }

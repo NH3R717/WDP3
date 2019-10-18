@@ -23,7 +23,7 @@ var bttn = document.querySelector('[type=submit]');
 // document.querySelector('[type=submit]').className = "disabled";
 // console.log(bttn.disabled);
 
-// 
+// validate fields enable submit button when all fields contain values
 let requiredFields = form.querySelectorAll('.required');
 for (let i = 0; i < requiredFields.length; i++){
     if (!requiredFields[i].value){

@@ -5,7 +5,7 @@ let form = document.querySelector('form');
 document.querySelector('h2').innerHTML = "<center>East Asia Travelers Club – Taiwan</center>";
 document.querySelector('h2').style.color = "white";
 
-//background field change
+// background field change
 document.body.style.backgroundImage = "url('images/Taipei.jpg')";
 
 // description field change
@@ -19,11 +19,11 @@ document.querySelector('#message').placeholder = "Comment";
 
 // disable submit button
 var bttn = document.querySelector('[type=submit]');
-bttn.disabled === true;
-document.querySelector('[type=submit]').className = "disabled";
-console.log(bttn.disabled);
+// bttn.disabled === true;
+// document.querySelector('[type=submit]').className = "disabled";
+// console.log(bttn.disabled);
 
-// validate name + all other fields are not null
+// 
 let requiredFields = form.querySelectorAll('.required');
 for (let i = 0; i < requiredFields.length; i++){
     if (!requiredFields[i].value){
@@ -34,6 +34,7 @@ for (let i = 0; i < requiredFields.length; i++){
     requiredFields[i].addEventListener('blur', validateRequired);
 };
 
+// validate name + all other fields are not null
 function validateRequired() {
 
     let target = document.getElementById('name');

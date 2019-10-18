@@ -5,7 +5,7 @@ let form = document.querySelector('form');
 document.querySelector('h2').innerHTML = "<center>East Asia Travelers Club – Taiwan</center>";
 document.querySelector('h2').style.color = "white";
 
-//background field change
+// background field change
 document.body.style.backgroundImage = "url('images/Taipei.jpg')";
 
 // description field change
@@ -16,16 +16,6 @@ document.querySelector('#name').placeholder = "Name";
 document.querySelector('#email').placeholder = "Email";
 document.querySelector('#phone').placeholder = "Line ID";
 document.querySelector('#message').placeholder = "Comment";
-
-// disable submit button
-function bttnDisable() {
-    let bttn = document.querySelector('[type=submit]');
-    bttn.disabled = true;
-    document.querySelector('[type=submit]').className = "disabled";
-};
-
-console.log(send.message);
-
 
 // validate name + all other fields are not null
 let requiredFields = form.querySelectorAll('.required');
@@ -38,17 +28,18 @@ function validateRequired(event) {
     let target = document.getElementById('name');
     let parent = target.parentElement;
     let error = '<label class="error">Please include your name.</label>';
+    let bttn = document.querySelector('[type=submit]');
 
     if (!target.value.length) {
         if (parent.querySelector('.required')) {
             parent.insertAdjacentHTML('beforeend', error);
+            bttn.disabled = true;
+            document.querySelector('[type=submit]').className = "disabled";
 
         } else {
             parent.removeChild(parent.querySelector('.error'));
-
         }
     }
-
 };
 
 // validate email field against email formating regex
@@ -101,8 +92,5 @@ function send(event) {
     let disabled = target.classList.contains('disabled');
     if (disabled === false) {
         form.innerHTML = message;
-
-    } else {
-        
     }
 };

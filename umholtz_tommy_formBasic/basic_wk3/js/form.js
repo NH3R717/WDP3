@@ -19,9 +19,6 @@ document.querySelector('#message').placeholder = "Comment";
 
 // disable submit button
 var bttn = document.querySelector('[type=submit]');
-// bttn.disabled === true;
-// document.querySelector('[type=submit]').className = "disabled";
-// console.log(bttn.disabled);
 
 // validate fields enable submit button when all fields contain values
 let requiredFields = form.querySelectorAll('.required');

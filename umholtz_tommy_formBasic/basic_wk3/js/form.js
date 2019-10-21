@@ -1,5 +1,5 @@
 // reference html document
-let form = document.querySelector('form');
+const form = document.querySelector('form');
 
 // header change
 document.querySelector('h2').innerHTML = "<center>East Asia Travelers Club – Taiwan</center>";
@@ -17,8 +17,8 @@ document.querySelector('#email').placeholder = "Email";
 document.querySelector('#phone').placeholder = "Line ID";
 document.querySelector('#message').placeholder = "Comment";
 
-// disable submit button
-var bttn = document.querySelector('[type=submit]');
+// reference html document submit buttion creating 'bttn' variable
+const bttn = document.querySelector('[type=submit]');
 
 // validate fields enable submit button when all fields contain values
 let requiredFields = form.querySelectorAll('.required');

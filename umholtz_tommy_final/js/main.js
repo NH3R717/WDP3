@@ -43,7 +43,7 @@ document.body.style.backgroundImage = "url('https://pixabay.com/get/57e9d5434e56
 
 	function dataFill() {
 		
-		const url = "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_WD3/master/umholtz_tommy_newsBasic/tourSpot.json";
+		const url = "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_final/location.json";
 		let xhr;
 		console.log(url);
 		makeRequest();

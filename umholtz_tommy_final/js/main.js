@@ -1,5 +1,5 @@
 // background image change change
-document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_formBasic/basic_wk3/images/Taipei.jpg')";
+document.body.style.backgroundImage = "url('https://pixabay.com/get/57e9d5434e56af14f6d1867dda6d367c153dd9e757536c48702879d49244cd5bbe/tokyo-1900443_1920.jpg')";
 
 //anonymous function to handle XHR connections
 (function () {
@@ -26,7 +26,7 @@ document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/NH
 				} else {
 					// this page is busted
 				}
-				console.log(xhr.responseText);
+				//console.log(xhr.responseText);
 			}
 		}
 		// nested function – execute code based on successfully pulling data from XHR request
@@ -69,11 +69,10 @@ document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/NH
 		// nested function – execute code based on successfully pulling data from XHR request
 	
 		function updateUISuccess(responseText) {
-			const data = JSON.parse(xhr.responseText);
-			
+			const data = JSON.parse(xhr.responseText)		
+			locationSection = document.querySelector('#blog');
+
 			console.log(xhr.responseText);
-			
-			const locationSection = document.querySelector('#blog');
 			
 			if (locationSection) {
 
@@ -92,16 +91,7 @@ document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/NH
 					tourSpots += '<p>' + data.tourSpots[i].description + '</p>';
 					//adds space between lines
 					tourSpots += '<p>' + data.tourSpots[i].lineBreak + '</p>';
-					//city
-					tourSpots += '<h4>' + data.tourSpots[i].city + '</h4>';
-					//airport code
-					tourSpots += '<h4>' + data.tourSpots[i].airportCode + '</h4>';
-					//local currency
-					tourSpots += '<h4>' + data.tourSpots[i].localCurrency + '</h4>';
-					//external link
-					tourSpots += '<a href=' + data.tourSpots[i].externalLink + '>' + "More Info" + '</a>';
-					//close article tag
-		
+
 					tourSpots += '</article>';
 		
 				}

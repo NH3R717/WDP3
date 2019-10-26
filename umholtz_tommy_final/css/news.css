@@ -5,12 +5,12 @@ body {
 	padding: 0 2rem;	
 	font: 1.5rem/1.4 'Open Sans', Helvetica, Arial, sans-serif;
 	background: #222222 url('images/txture.png') repeat top left;
-	color: #888888;
+	color: #5d5d5d;
 }
 
 h2, h3 {
 	font-size: 2.4rem;
-	color: #444444;
+	color: #5d5d5d;
 }
 h2 {
 	text-transform: uppercase;
@@ -59,7 +59,7 @@ dl::after {
 	position: relative;
 	padding: 2rem;
 	margin-bottom: 3rem;
-	background: #f0f0f0;	
+	background: #bcfaf7;	
 	overflow: hidden;
 }
 
@@ -71,7 +71,7 @@ dl::after {
 	}
 	#blog article:not(:nth-of-type(2n+2)) { margin-right: 3rem; }
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
 	#blog article { width: calc(100%/3 - 6rem/3); }
 	#blog article:not(:nth-of-type(2n+2)) { margin-right: 0; }
 	#blog article:not(:nth-of-type(3n+3)) { margin-right: 3rem; }
@@ -82,7 +82,7 @@ dl::after {
 .thumbnail {
 	width: calc(100% + 4rem);
 	margin: 0;
-	height: 15rem;
+	height: 22rem;
 	position: relative;	
 	top: -2rem;
 	left: -2rem;
@@ -154,34 +154,4 @@ dd {
 #blog a:active { 
 	background: #222222;
 	transform: scale(1.05); 
-}
-
-/* LOAD MORE BUTTON 
-====================================================================== */
-article + p { 
-	clear: both; 
-	text-align: center;
-}
-button {
-	display: block;
-	width: 100%;
-	padding: 1rem 2rem;
-	outline: none;
-	cursor: pointer;
-	color: #888888;
-	font-weight: 600;
-	border-radius: 2px;	
-	background: #222222;
-	transform-origin: center center;
-	transition: all 0.5s;
-}
-button::before { right: calc(100% + 2rem); }
-button::after { left: calc(100% + 2rem); }
-button:hover { 
-	background: #333333;
-	transform: scale(1.025); 
-}
-button:active { 
-	background: #555555;
-	transform: scale(1.05);
 }

@@ -63,7 +63,7 @@ document.body.style.backgroundImage = "url('https://pixabay.com/get/57e9d5434e56
 				} else {
 					// this page is busted
 				}
-				console.log(xhr.responseText);
+				// console.log(xhr.responseText);
 			}
 		}
 		// nested function – execute code based on successfully pulling data from XHR request
@@ -72,7 +72,7 @@ document.body.style.backgroundImage = "url('https://pixabay.com/get/57e9d5434e56
 			const data = JSON.parse(xhr.responseText)		
 			locationSection = document.querySelector('#blog');
 
-			console.log(xhr.responseText);
+			// console.log(xhr.responseText);
 			
 			if (locationSection) {
 
@@ -89,8 +89,6 @@ document.body.style.backgroundImage = "url('https://pixabay.com/get/57e9d5434e56
 					tourSpots += '<h2>' + data.tourSpots[i].title + '</h2>';
 					//activity description
 					tourSpots += '<p>' + data.tourSpots[i].description + '</p>';
-					//adds space between lines
-					tourSpots += '<p>' + data.tourSpots[i].lineBreak + '</p>';
 
 					tourSpots += '</article>';
 		

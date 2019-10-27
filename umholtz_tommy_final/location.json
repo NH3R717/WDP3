@@ -4,21 +4,21 @@
 "id" : 0,
 "title" : "Ginza – Shopping District",
 "imageLink" : "https://live.staticflickr.com/3099/3167136974_cb860f4682_k.jpg",
-"description" : "description"
+"description" : "Some of the finest Japanese and international fashion and luxury goods can be bought at Tokyo's Ginza shopping area – center city."
 },
 
 { 
 "id" : 1, 
 "title" : "Odaiba – Hot Springs", 
 "imageLink" : "https://live.staticflickr.com/3464/3281206172_48922be865_h.jpg",
-"description" : "description" 
+"description" : "After a long morning of shipping head over the Rainbow Bridge where you'll have a selection of hot springs to spend the afternoon relaxing." 
 },
 
 {
 "id" : 2,
 "title" : "Shibuya – Night Life",
 "imageLink" : "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_final/Images/shibuya_night.jpg",
-"description" : "description"
+"description" : "Refreshed and relaxed it's time to play, Shibuya is on place to consider. Bars and restaurants open until late in the morning "
 }
 ]
 }

@@ -1,5 +1,11 @@
 {
 "tourSpots":[
+{
+"id" : 0,
+"title" : "Ginza – Shopping District",
+"imageLink" : "https://live.staticflickr.com/3099/3167136974_cb860f4682_k.jpg",
+"description" : "description"
+},
 
 { 
 "id" : 1, 
@@ -10,13 +16,6 @@
 
 {
 "id" : 2,
-"title" : "Ginza – Shopping District",
-"imageLink" : "https://live.staticflickr.com/3099/3167136974_cb860f4682_k.jpg",
-"description" : "description"
-},
-
-{
-"id" : 3,
 "title" : "Shibuya – Night Life",
 "imageLink" : "https://raw.githubusercontent.com/NH3R717/umholtz_tommy_wd3/master/umholtz_tommy_final/Images/shibuya_night.jpg",
 "description" : "description"
